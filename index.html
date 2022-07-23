@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Musicana</title>
+
+  <!-- google font for ubuntu and montserrat -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <!-- we need to add css link of bootstrap in order to style toggle and styling buttons
+also bootstrap css is above main .css because the one which is at last will be given priority -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome script for app store and play store icon inside button-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- jquery link of bootstrap required for toggle to work// link:https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!--navbar-expand-lg for making 3 section horizontal // bg-light for light background color
+          //navbar-light for light heading of 3 sec // bg-dark removed to match with the title section color-->
+        <a class="navbar-brand" href="">Musicana</a>
+        <!--navbar-brand for brand name which has its own default setting-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--this button for toggling 3 section in smaller screen-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--this div will call that toggler button  -->
+          <ul class="navbar-nav ms-auto">
+            <!--ms-auto for margin left for three section. see https://getbootstrap.com/docs/5.0/utilities/spacing/-->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+      <!-- for help in grid, see link:https://getbootstrap.com/docs/5.0/layout/grid/ -->
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1>Play with interesting musical instruments.</h1>
+          <!-- for button styling, link:https://getbootstrap.com/docs/5.0/components/buttons/ -->
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/guitar1.png" alt="Guitar Image">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <!-- here, fa-4x is used to increase the size of the feature icon 4 times. -->
+        <h3>Easy to use.</h3>
+        <p>you just need to playwith the keyboard.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the instrument, the best instruments.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Guaranteed to entertain.</h3>
+        <p>Find the love of your music or your money back.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <!-- bootstrap carousel is used to slide contents automatically or manually by pressing aero buttons on left and right.
+   link:https://getbootstrap.com/docs/5.0/components/carousel/ -->
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to buy expensive instruments. I've found the best drum on Musicana.</h2>
+          <img class="testimonial-image" src="images/yashvardhanphoto.jpg" alt="leader-profile">
+          <em>Yashvardhan,India</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">I could not afford expensive musical instruments so musicana helped me a lot.</h2>
+          <img class="testimonial-image" src="images/rishabh.jpeg" alt="lady-profile">
+          <em></em>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+
+      </button>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every musicans's Need</h2>
+    <p>Simple and affordable price plans for your instruments.</p>
+
+<div class="row">
+  <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Drum</h3>
+      </div>
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>5 hrs Per Day</p>
+        <p>maximum 2 users</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-outline-dark" type="button" onclick="window.location.href='https://yashvardhanatrgithub.github.io/Drumkit1/';">Play Free</button>
+      </div>
+
+    </div>
+  </div>
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Piano</h3>
+
+        </div>
+        <div class="card-body">
+          <h2>Rs49 / mo</h2>
+          <p>Unlimited hrs</p>
+          <p>Unlimited users</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://yashvardhanatrgithub.github.io/piano-kit/';">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="pricing-column col-lg-4">
+      <div class="card">
+        <div class="card-header">
+          <h3>Guitar</h3>
+
+        </div>
+        <div class="card-body">
+          <h2>Rs99 / mo</h2>
+          <p>karaoke feature</p>
+          <p>Unlimited hrs</p>
+          <p>Unlimited users</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Music Today.</h3>
+    <button class="btn btn-lg btn-dark download-button" type="button"><i class="fab fa-apple"></i>Download</button>
+    <button class="btn btn-lg btn-light download-button" type="button"><i class="fab fa-google-play"></i>Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+
+    <p>© Copyright 2021 Musicana</p>
+
+  </footer>
+
+
+</body>
+
+</html>
