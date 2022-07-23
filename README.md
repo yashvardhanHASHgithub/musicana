@@ -1,4 +1,4 @@
-## musicana
+## musicana azure link here: https://nice-meadow-052121e10.1.azurestaticapps.net
 This project is based on azure static web app and developed using html, CSS, JavaScript.
 # This is the first page
 here, we have download buttons for play store and app store which glows when we put cursor on it.
